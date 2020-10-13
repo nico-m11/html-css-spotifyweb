@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sidebar {
+  width: 18vw;
+  height: 90vh;
+  background-color: black;
+  position: relative;
+}
+
+.img_logo_sidebar img {
+  width: 10rem;
+  height: 7rem;
+  margin: 0 1rem;
+}
+
+.nav_sidebar_home a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+}
+.nav_sidebar_home img {
+  display: inline;
+  color: white;
+  height: 1.1rem;
+  width: 1.1rem;
+  float: left;
+  margin: 0 0.8rem;
+}
+.main-window {
+  width: 82vw;
+  height: 90vh;
+  background-color: purple;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.music-player {
+  width: 100vw;
+  height: 10vh;
+  background-color: green;
+}
