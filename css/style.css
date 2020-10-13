@@ -3,6 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Header */
+
+header .header_upgrade {
+  width: 1653px;
+  height: 100px;
+  background-color: black;
+  float: right;
+}
+.header_upgrade a{
+  float: right;
+  color: white;
+  margin: 20px 70px;
+  padding: 0.5% 3%;
+  border: 1px solid white;
+  border-radius: 45%;
+  text-decoration: none;
+}
+
 /*SIDEBAR*/
 .sidebar {
   width: 250px;
@@ -70,7 +89,7 @@
   margin-top: 8%;
 }
 .sidebar_install {
-  margin-top: 70%;
+  margin-top: 65%;
 }
 .sidebar_install img {
   display: inline;
@@ -118,12 +137,11 @@
   margin-left: 14%;
 }
 .main-window {
-  width: 1670px;
-  height: 90vh;
-  background-color: purple;
+  width: 1652px;
+  height: 545px;
   position: absolute;
-  top: 0;
   right: 0;
+  top: 100px;
 }
 
 .music-player {
