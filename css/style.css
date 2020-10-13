@@ -3,38 +3,122 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
+/*SIDEBAR*/
 .sidebar {
-  width: 18vw;
+  width: 250px;
   height: 90vh;
   background-color: black;
   position: relative;
+  overflow-y: scroll;
 }
 
 .img_logo_sidebar img {
   width: 10rem;
   height: 7rem;
-  margin: 0 1rem;
+  margin: 0 1.1rem;
 }
 
+.nav_sidebar_home {
+  vertical-align: middle;
+}
 .nav_sidebar_home a {
   display: block;
   text-decoration: none;
   color: white;
   font-family: 'Roboto', sans-serif;
-
+  margin-left: 14%;
+  margin-top: 3%;
 }
+
 .nav_sidebar_home img {
   display: inline;
   color: white;
   height: 1.1rem;
   width: 1.1rem;
   float: left;
+  margin-left: 5%;
+}
+
+.sidebar_playlist {
+  font-family: 'Roboto', sans-serif;
+  vertical-align: middle;
+}
+
+.sidebar_playlist span  {
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  height: 30px;
+  width: 20px;
+  padding: 5px;
+  font-size: 1.5rem;
   margin: 0 0.8rem;
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar_playlist a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar_playlist p {
+  color: gray;
+  text-decoration: none;
+  font
+  margin-left: 10%;
+  padding: 2%;
+  margin-top: 8%;
+}
+.sidebar_install {
+  margin-top: 70%;
+}
+.sidebar_install img {
+  display: inline;
+  color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.sidebar_install a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 14%;
+}
+.sidebar_line {
+  margin-top: 10%;
+  color: white;
+  border: 1px solid white;
+}
+.sidebar_account {
+  margin-top: 10%;
+}
+.sidebar_account img {
+  display: inline;
+  color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.sidebar_account a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 14%;
 }
 .main-window {
-  width: 82vw;
+  width: 1670px;
   height: 90vh;
   background-color: purple;
   position: absolute;
@@ -43,7 +127,7 @@
 }
 
 .music-player {
-  width: 100vw;
+  width: 1920px;
   height: 10vh;
   background-color: green;
 }
