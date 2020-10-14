@@ -7,25 +7,28 @@
 /* Header */
 
 header .header_upgrade {
-  width: 85%;
-  height: 100px;
+  width: calc(100% - 200px);
+  height: 90px;
   background-color: black;
-  float: right;
+  top: 0;
+  left: 200px;
+  z-index: 1;
+  position: fixed;
 }
 .header_upgrade a{
   float: right;
   color: white;
   margin: 25px 70px;
-  padding: 0.5% 3%;
+  padding: 0.5em 2em;
   border: 1px solid white;
-  border-radius: 35%;
+  border-radius: 32px;
   text-decoration: none;
 }
 
 /*SIDEBAR*/
 .sidebar {
-  width: 15%;
-  height: 100%;
+  width: 200px;
+  height: calc(100% - 200px);
   background-color: black;
   position: relative;
 }
@@ -63,6 +66,16 @@ header .header_upgrade {
 .sidebar_playlist {
   font-family: 'Roboto', sans-serif;
   vertical-align: middle;
+  margin-top: 10%;
+}
+
+.sidebar_playlist h3:hover {
+  color: white;
+}
+.sidebar_playlist h3 {
+  color: gray;
+  padding: 3%;
+  margin: 2%;
 }
 
 .sidebar_playlist span  {
@@ -77,11 +90,17 @@ header .header_upgrade {
   text-decoration: none;
 }
 
+.sidebar_playlist span:hover {
+  color: white;
+}
+
 .sidebar_playlist a {
   text-decoration: none;
   color: gray;
 }
-
+.sidebar_playlist a:hover {
+  color: white;
+}
 .sidebar_playlist p {
   color: gray;
   text-decoration: none;
@@ -90,8 +109,11 @@ header .header_upgrade {
   padding: 2%;
   margin-top: 8%;
 }
+.sidebar_playlist P:hover {
+  color: white;
+}
 .sidebar_install {
-  margin-top: 70%;
+  margin-top: 80%;
 }
 .sidebar_install img {
   display: inline;
@@ -111,13 +133,12 @@ header .header_upgrade {
   margin-left: 14%;
 }
 .sidebar_line {
-  margin-top: 5%;
+  margin-top: 7%;
   color: gray;
   border: 1px solid white;
 }
 .sidebar_account {
-  margin-top: 15%;
-  padding: 2%;
+  padding: 5%;
 }
 .sidebar_account img {
   display: inline;
@@ -142,11 +163,11 @@ header .header_upgrade {
 
 /* Window */
 .main-window {
-  width: 85%;
-  height: 100%;
+  width: calc(100% - 200px);
+  height: calc(100% - 90px);
   position: absolute;
   right: 0;
-  top: 100px;
+  top: 90px;
   background-color: #121212;
   overflow-y: auto;
 }
@@ -171,47 +192,55 @@ header .header_upgrade {
   margin: 3%;
 }
 .window_img {
-  display: inline;
-  float: left;
+  display: inline-block;
   height: 200px;
   width: 200px;
   margin: 2%;
+  vertical-align: middle;
 }
+
 .window_img img {
   height: 200px;
   width: 200px;
 }
+
+
 .window_img h3, p {
   color: white;
   text-align: center;
 }
 .two {
-  height: 45%;
+  height: 40%;
 }
-.two_ {
-  margin-top: 25%;
+.two_ span {
+  margin-top: 2%;
   margin-left: 3%;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 .sec {
   margin-top: 35px;
 }
 .three {
   height: 10%;
+
 }
 .three_ img {
   border: 1px solid black;
   border-radius: 50%;
 }
 .three_ span {
- display: flex;
- flex-wrap: wrap;
  color: white;
  margin-left: 2%;
+ display: flex;
+ flex-wrap: wrap;
 }
 /* music player */
 .music-player {
   width: 100%;
-  height: 10%;
+  height: 90px;
   background-color: green;
+  position: fixed;
+  bottom: 0;
 }
