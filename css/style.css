@@ -28,7 +28,7 @@ header .header_upgrade {
 /*SIDEBAR*/
 .sidebar {
   width: 200px;
-  height: calc(100% - 200px);
+  height: calc(100vh - 90px);
   background-color: black;
   position: relative;
 }
@@ -66,7 +66,7 @@ header .header_upgrade {
 .sidebar_playlist {
   font-family: 'Roboto', sans-serif;
   vertical-align: middle;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .sidebar_playlist h3:hover {
@@ -113,7 +113,7 @@ header .header_upgrade {
   color: white;
 }
 .sidebar_install {
-  margin-top: 80%;
+  margin-top: 50%;
 }
 .sidebar_install img {
   display: inline;
@@ -164,15 +164,17 @@ header .header_upgrade {
 /* Window */
 .main-window {
   width: calc(100% - 200px);
-  height: calc(100% - 90px);
+  height: calc(91vh - 90px);
   position: absolute;
   right: 0;
   top: 90px;
   background-color: #121212;
   overflow-y: auto;
+  padding-bottom: 20px;
+
 }
 .window_list {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 17%;
   width: 70%;
 }
@@ -209,8 +211,10 @@ header .header_upgrade {
   color: white;
   text-align: center;
 }
+
 .two {
   height: 40%;
+  padding: 10px;
 }
 .two_ span {
   margin-top: 2%;
@@ -224,7 +228,7 @@ header .header_upgrade {
 }
 .three {
   height: 10%;
-
+  margin: 10% 0;
 }
 .three_ img {
   border: 1px solid black;
@@ -235,6 +239,7 @@ header .header_upgrade {
  margin-left: 2%;
  display: flex;
  flex-wrap: wrap;
+ margin-top: 20px;
 }
 /* music player */
 .music-player {
