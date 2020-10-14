@@ -7,7 +7,7 @@
 /* Header */
 
 header .header_upgrade {
-  width: 1653px;
+  width: 85%;
   height: 100px;
   background-color: black;
   float: right;
@@ -15,20 +15,19 @@ header .header_upgrade {
 .header_upgrade a{
   float: right;
   color: white;
-  margin: 20px 70px;
+  margin: 25px 70px;
   padding: 0.5% 3%;
   border: 1px solid white;
-  border-radius: 45%;
+  border-radius: 35%;
   text-decoration: none;
 }
 
 /*SIDEBAR*/
 .sidebar {
-  width: 250px;
-  height: 90vh;
+  width: 15%;
+  height: 100%;
   background-color: black;
   position: relative;
-  overflow-y: scroll;
 }
 
 .img_logo_sidebar img {
@@ -40,10 +39,13 @@ header .header_upgrade {
 .nav_sidebar_home {
   vertical-align: middle;
 }
+.nav_sidebar_home:hover {
+  border-left: 3px solid green;
+}
 .nav_sidebar_home a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: gray;
   font-family: 'Roboto', sans-serif;
   margin-left: 14%;
   margin-top: 3%;
@@ -51,7 +53,7 @@ header .header_upgrade {
 
 .nav_sidebar_home img {
   display: inline;
-  color: white;
+  color: gray;
   height: 1.1rem;
   width: 1.1rem;
   float: left;
@@ -77,7 +79,7 @@ header .header_upgrade {
 
 .sidebar_playlist a {
   text-decoration: none;
-  color: white;
+  color: gray;
 }
 
 .sidebar_playlist p {
@@ -89,11 +91,11 @@ header .header_upgrade {
   margin-top: 8%;
 }
 .sidebar_install {
-  margin-top: 65%;
+  margin-top: 70%;
 }
 .sidebar_install img {
   display: inline;
-  color: white;
+  color: gray;
   height: 1.5rem;
   width: 1.5rem;
   float: left;
@@ -104,17 +106,18 @@ header .header_upgrade {
 .sidebar_install a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: gray;
   font-family: 'Roboto', sans-serif;
   margin-left: 14%;
 }
 .sidebar_line {
-  margin-top: 10%;
-  color: white;
+  margin-top: 5%;
+  color: gray;
   border: 1px solid white;
 }
 .sidebar_account {
-  margin-top: 10%;
+  margin-top: 15%;
+  padding: 2%;
 }
 .sidebar_account img {
   display: inline;
@@ -132,20 +135,83 @@ header .header_upgrade {
 .sidebar_account a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: gray;
   font-family: 'Roboto', sans-serif;
   margin-left: 14%;
 }
+
+/* Window */
 .main-window {
-  width: 1652px;
-  height: 545px;
+  width: 85%;
+  height: 100%;
   position: absolute;
   right: 0;
   top: 100px;
+  background-color: #121212;
+  overflow-y: auto;
+}
+.window_list {
+  margin-top: 20px;
+  margin-left: 17%;
+  width: 70%;
+}
+.window_list li {
+  display: inline;
+  padding: 2%;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+}
+.window_list li:hover {
+  border-bottom: 2px solid green;
 }
 
+.text_window h1 {
+  color: white;
+  margin: 3%;
+}
+.window_img {
+  display: inline;
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 2%;
+}
+.window_img img {
+  height: 200px;
+  width: 200px;
+}
+.window_img h3, p {
+  color: white;
+  text-align: center;
+}
+.two {
+  height: 45%;
+}
+.two_ {
+  margin-top: 25%;
+  margin-left: 3%;
+  color: white;
+}
+.sec {
+  margin-top: 35px;
+}
+.three {
+  height: 10%;
+}
+.three_ img {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.three_ span {
+ display: flex;
+ flex-wrap: wrap;
+ color: white;
+ margin-left: 2%;
+}
+/* music player */
 .music-player {
-  width: 1920px;
-  height: 10vh;
+  width: 100%;
+  height: 10%;
   background-color: green;
 }
