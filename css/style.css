@@ -39,6 +39,8 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .img_logo_sidebar img {
@@ -122,17 +124,18 @@ main {
 }
 .sidebar_footer {
   position: absolute;
-  bottom: 0;
+  display: block;
+  bottom: 10px;
 }
 
 .sidebar_install img {
   display: inline;
   color: gray;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 18px;
+  width: 18px;
   float: left;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .sidebar_install a {
@@ -147,24 +150,25 @@ main {
   color: white;
 }
 .sidebar_line {
-  margin-top: 7%;
   color: gray;
   border: 1px solid white;
 }
 .sidebar_account {
-  padding: 1%;
+  display: inline;
 }
 .sidebar_account img {
-  display: inline-block;
-  color: white;
-  height: 1.5rem;
-  width: 1.5rem;
+  display: inline;
+  height: 18px;
+  width: 18px;
+  justify-content: flex-start;
   float: left;
-  margin-left: 5%;
+  color: white;
+  margin-left: 8px;
   border: 1px solid lightgray;
   border-radius: 50%;
   background-color: gray;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-right: 15px;
   padding: 2px;
 }
 
@@ -173,9 +177,9 @@ main {
   text-decoration: none;
   color: gray;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
+  margin: 10px 5px;
   padding: 2px;
-  margin-top: 0;
+
 }
 
 .sidebar_account a:hover {
@@ -193,6 +197,7 @@ main {
   overflow-y: auto;
   padding-bottom: 20px;
   float: right;
+  font-family: 'Roboto', sans-serif;
 }
 
 .window_list {
@@ -201,8 +206,8 @@ main {
   width: 70%;
 }
 .window_list li {
-  display: inline;
-  padding: 2%;
+  display: inline-block;
+  padding: 10px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   color: gray;
@@ -292,6 +297,10 @@ main {
   justify-content: space-between;
   position: relative;
 }
+.playing {
+  justify-content: flex-start;
+  width: 40%;
+}
 .playing img {
   border: 1px solid black;
   height: 60px;
@@ -317,7 +326,7 @@ main {
 }
 
 .playing i {
-  color: white;
+  color: gray;
   display: inline-block;
   position: absolute;
   top: 35px;
@@ -327,6 +336,12 @@ main {
 i .fa-folder-o {
   left: 20px;
 }
+.main_control {
+  justify-content: center;
+  margin-left: auto;
+  width: 40%;
+}
+
 .puls_control {
   color: white;
 }
@@ -334,20 +349,96 @@ i .fa-folder-o {
   padding: 20px;
 }
 .range_song {
-  border: 3px solid white;
-  background-color: white;
+  border: 3px solid gray;
+  width: 320px;
+  border-radius: 15px;
 }
-.vol-control {
+.side_control {
+  justify-content: flex-end;
+  width: 20%;
+}
+  .vol-control {
   color: white;
-  margin-right: 150px;
+  margin-right: 50px;
   margin-top: 30px;
 }
 .vol-control i {
   padding: 5px;
 }
 
-
+.range_song_vol {
+  border: 3px solid gray;
+  width: 100px;
+  position: absolute;
+  right: 5px;
+  margin-right: 20px;
+  top: 42px;
+  border-radius: 15px;
+}
 footer {
   width: 100%;
   height: 100px;
+  font-family: 'Roboto', sans-serif;
+}
+.logo_small {
+  display: none;
+}
+
+/*media queery */
+
+@media screen and (max-width: 768px) {
+  .main-window {
+    width: calc(100% - 100px);
+  }
+  .logo_small {
+    display: block;
+    height: 60px;
+    width: 60px;
+  }
+.nav_sidebar_home {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav_sidebar_home img {
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+}
+  .img_logo_sidebar {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100px;
+
+  }
+  .nav_sidebar_home a {
+    display: none;
+  }
+
+
+  .sidebar_playlist {
+    display: none;
+  }
+  .sidebar_footer {
+    display: block;
+    padding: 5px;
+  }
+.sidebar_install img {
+  height: 30px;
+  width: 30px;
+  margin: 5px 0px;
+}
+  .sidebar_install a {
+    display: none;
+  }
+  .sidebar_account img {
+    height: 30px;
+    width: 30px;
+    margin-left: 0px;
+    display: block;
+  }
+  .sidebar_account a {
+    display: none;
+  }
 }
