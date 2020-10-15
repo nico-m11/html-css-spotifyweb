@@ -347,6 +347,7 @@ i .fa-folder-o {
 }
 .puls_control i {
   padding: 20px;
+  display:  inline-block;
 }
 .range_song {
   border: 3px solid gray;
@@ -364,6 +365,7 @@ i .fa-folder-o {
 }
 .vol-control i {
   padding: 5px;
+  display: inline-block;
 }
 
 .range_song_vol {
@@ -387,6 +389,10 @@ footer {
 /*media queery */
 
 @media screen and (max-width: 768px) {
+  header .header_upgrade {
+    width: calc(100% - 100px);
+    left: 100px;
+  }
   .main-window {
     width: calc(100% - 100px);
   }
@@ -438,7 +444,28 @@ footer {
     margin-left: 0px;
     display: block;
   }
+  .sidebar_install img:hover {
+    transform: scale(1.2);
+  }
+  .sidebar_account img:hover {
+    transform: scale(1.2);
+  }
   .sidebar_account a {
     display: none;
   }
+  .puls_control {
+    margin: 5px 50px;
+}
+.range_song {
+  width: 60%;
+  margin: 10px 50px;
+}
+   .puls_control i {
+     padding: 5px;
+     text-align: center;
+   }
+.vol-control {
+    margin: 0;
+  }
+
 }
