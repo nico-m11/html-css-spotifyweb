@@ -24,13 +24,21 @@ header .header_upgrade {
   border-radius: 32px;
   text-decoration: none;
 }
-
+.header_upgrade a:hover {
+   transform: scale(1.2);
+}
+main {
+  height: calc(100vh - 100px);
+  position: relative;
+}
 /*SIDEBAR*/
 .sidebar {
   width: 200px;
-  height: calc(100vh - 90px);
+  height: 100%;
   background-color: black;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .img_logo_sidebar img {
@@ -112,9 +120,11 @@ header .header_upgrade {
 .sidebar_playlist P:hover {
   color: white;
 }
-.sidebar_install {
-  margin-top: 50%;
+.sidebar_footer {
+  position: absolute;
+  bottom: 0;
 }
+
 .sidebar_install img {
   display: inline;
   color: gray;
@@ -132,47 +142,59 @@ header .header_upgrade {
   font-family: 'Roboto', sans-serif;
   margin-left: 14%;
 }
+
+.sidebar_install a:hover {
+  color: white;
+}
 .sidebar_line {
   margin-top: 7%;
   color: gray;
   border: 1px solid white;
 }
 .sidebar_account {
-  padding: 5%;
+  padding: 1%;
 }
 .sidebar_account img {
-  display: inline;
+  display: inline-block;
   color: white;
   height: 1.5rem;
   width: 1.5rem;
   float: left;
   margin-left: 5%;
-  margin-right: 5%;
   border: 1px solid lightgray;
   border-radius: 50%;
   background-color: gray;
+  margin-top: 10px;
+  padding: 2px;
 }
 
 .sidebar_account a {
-  display: block;
+  display: inline;
   text-decoration: none;
   color: gray;
   font-family: 'Roboto', sans-serif;
-  margin-left: 14%;
+  text-align: center;
+  padding: 2px;
+  margin-top: 0;
+}
+
+.sidebar_account a:hover {
+  color: white;
 }
 
 /* Window */
 .main-window {
   width: calc(100% - 200px);
-  height: calc(91vh - 90px);
-  position: absolute;
+  height: calc(100vh - 100px);
+  position: relative;
   right: 0;
-  top: 90px;
+  padding-top: 90px;
   background-color: #121212;
   overflow-y: auto;
   padding-bottom: 20px;
-
+  float: right;
 }
+
 .window_list {
   margin-top: 10px;
   margin-left: 17%;
@@ -199,6 +221,8 @@ header .header_upgrade {
   width: 200px;
   margin: 2%;
   vertical-align: middle;
+  position: relative;
+
 }
 
 .window_img img {
@@ -211,7 +235,9 @@ header .header_upgrade {
   color: white;
   text-align: center;
 }
-
+.one{
+  padding: 2%;
+}
 .two {
   height: 40%;
   padding: 10px;
@@ -223,12 +249,14 @@ header .header_upgrade {
   display: flex;
   flex-wrap: wrap;
 }
+
 .sec {
   margin-top: 35px;
 }
 .three {
   height: 10%;
   margin: 10% 0;
+  position: relative;
 }
 .three_ img {
   border: 1px solid black;
@@ -241,11 +269,85 @@ header .header_upgrade {
  flex-wrap: wrap;
  margin-top: 20px;
 }
+
+.dis_non {
+  display: none;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+}
+
+:hover .dis_non {
+  display: block;
+  opacity: 0.5;
+}
 /* music player */
 .music-player {
   width: 100%;
-  height: 90px;
-  background-color: green;
+  height: 100px;
+  background-color: #2c2c2c;
   position: fixed;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.playing img {
+  border: 1px solid black;
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+.playing h4 {
+  margin: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  margin-top: 10px;
+  color: white;
+}
+.playing span {
+  margin: 10px;
+  color: gray;
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+.playing i {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  margin-left: 190px;
+  margin-top: 10px;
+}
+i .fa-folder-o {
+  left: 20px;
+}
+.puls_control {
+  color: white;
+}
+.puls_control i {
+  padding: 20px;
+}
+.range_song {
+  border: 3px solid white;
+  background-color: white;
+}
+.vol-control {
+  color: white;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+.vol-control i {
+  padding: 5px;
+}
+
+
+footer {
+  width: 100%;
+  height: 100px;
 }
