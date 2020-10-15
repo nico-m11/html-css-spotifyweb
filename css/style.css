@@ -224,7 +224,7 @@ main {
   display: inline-block;
   height: 200px;
   width: 200px;
-  margin: 2%;
+  margin: 50px 20px;
   vertical-align: middle;
   position: relative;
 
@@ -241,7 +241,7 @@ main {
   text-align: center;
 }
 .one{
-  padding: 2%;
+  padding: 10px;
 }
 .two {
   height: 40%;
@@ -256,11 +256,11 @@ main {
 }
 
 .sec {
-  margin-top: 35px;
+  margin: 50px 20px;
 }
 .three {
   height: 10%;
-  margin: 10% 0;
+  margin: 150px 20px;
   position: relative;
 }
 .three_ img {
@@ -458,14 +458,30 @@ footer {
 }
 .range_song {
   width: 60%;
-  margin: 10px 50px;
+  margin: 15px 50px;
 }
    .puls_control i {
-     padding: 5px;
+     padding: 2px;
      text-align: center;
    }
 .vol-control {
-    margin: 0;
+    margin: 20px 0;
+  }
+  .range_song_vol {
+    margin-top: 15px;
+  }
+  .three {
+    margin: 450px 10px;
   }
 
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+ .window_list {
+   margin: 10px 80px;
+   padding-right: 10px;
+ }
+ .range_song_vol {
+   margin-top: 20px;
+ }
 }
